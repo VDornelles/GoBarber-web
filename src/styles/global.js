@@ -18,12 +18,12 @@ export default createGlobalStyle`
     height:100%;
   }
 
-  body{
-    -webkit-font-smoothing: antialised;
+  body, input, button{
+    font : 14px, 'Roboto',sans-serif;
   }
 
-  body, input, button{
-    font: 14px, 'Roboto', sans-serif;
+  body{
+    -webkit-font-smoothing: antialised;
   }
 
   a{
