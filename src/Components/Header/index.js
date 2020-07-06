@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Link } from 'react-router-dom';
-
+import Notifications from '~/Components/Notifications';
 import logo from '~/assets/logo-purple.svg';
 
 import { Container, Content, Profile } from './styles';
@@ -16,6 +16,7 @@ function Header() {
         </nav>
 
         <aside>
+          <Notifications />
           <Profile>
             <div>
               <strong>Vinicius Dornelles</strong>
