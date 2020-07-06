@@ -34,6 +34,7 @@ export const NotificationsList = styled.div`
   background: rgba(0, 0, 0, 0.5);
   padding: 15px 5px;
   border-radius: 5px;
+  display: ${(props) => (props.visible ? 'block' : 'none')};
 
   &::before {
     position: absolute;
