@@ -5,7 +5,7 @@ import Notifications from '~/Components/Notifications';
 import logo from '~/assets/logo-purple.svg';
 import { signOut } from '~/store/modules/auth/actions';
 
-import { Container, Content, Profile, Options } from './styles';
+import { Container, Content, Profile } from './styles';
 
 function Header() {
   const profile = useSelector((state) => state.user.profile);
