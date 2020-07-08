@@ -48,12 +48,20 @@ export const Profile = styled.div`
       display: block;
       color: #333;
     }
-
-    a {
+    span {
       display: block;
+    }
+    a {
       margin-top: 2px;
       font-size: 12px;
       color: #999;
+
+      & + a {
+        color: rgba(255, 0, 0, 0.5);
+        margin-left: 5px;
+        padding-left: 5px;
+        border-left: 1px solid #eee;
+      }
     }
   }
 
