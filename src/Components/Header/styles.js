@@ -20,7 +20,7 @@ export const Content = styled.div`
     img {
       margin-right: 20px;
       padding-right: 20px;
-      border-right: 1px solid #eee;
+      border: 1px solid #eee;
     }
 
     a {
@@ -58,7 +58,9 @@ export const Profile = styled.div`
   }
 
   img {
+    width: 40px;
     height: 40px;
     border-radius: 50%;
+    border: 1px solid #7159c1;
   }
 `;

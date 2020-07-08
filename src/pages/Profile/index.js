@@ -1,16 +1,25 @@
 import React from 'react';
 import { Form, Input } from '@rocketseat/unform';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+
+import { profileUpdateRequest } from '~/store/modules/user/action';
+import AvatarInput from './AvatarInput';
+
 import { Container } from './styles';
 
 function Profile() {
+  const dispatch = useDispatch();
   const profile = useSelector((state) => state.user.profile);
 
-  function handleSubmit(data) {}
+  function handleSubmit(data) {
+    console.tron.log(data);
+    dispatch(profileUpdateRequest(data));
+  }
 
   return (
     <Container>
       <Form initialData={profile} onSubmit={handleSubmit}>
+        <AvatarInput name="avatar_id" />
         <Input name="name" placeholder="Full name" />
         <Input name="email" type="email" placeholder="Your e-mail" />
 
@@ -31,7 +40,7 @@ function Profile() {
         <button type="submit">Update Profile</button>
       </Form>
 
-      <button type="button">LogOut</button>
+      <button type="button">SignOut</button>
     </Container>
   );
 }
