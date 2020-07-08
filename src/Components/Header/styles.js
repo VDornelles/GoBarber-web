@@ -56,7 +56,8 @@ export const Profile = styled.div`
       color: #999;
 
       & + a {
-        color: rgba(255, 0, 0, 0.5);
+        font-weight: bold;
+        color: rgba(255, 0, 0, 0.8);
         margin-left: 5px;
         padding-left: 5px;
         border-left: 1px solid #eee;
