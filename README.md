@@ -1,6 +1,6 @@
 # GoBarber Web
 ### Features
- The following features were used in the development of this application:
+ Some of the major features that were used in the development of this application:
  * [ReactJS](https://reactjs.org/)
     * [React Hooks](https://reactjs.org/docs/hooks-intro.html)
      * [React History](https://www.npmjs.com/package/react-history)
